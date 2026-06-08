@@ -1,0 +1,212 @@
+/* ================================================================
+   SIGAVT — Feuille de style globale
+   Design : sidebar sombre #1e293b, header #1e3a5f, accents bleus
+   ================================================================ */
+
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-font-size: 13px;
+    -fx-background-color: #f1f5f9;
+}
+
+/* ─── Sidebar ────────────────────────────────────────────────── */
+.sidebar {
+    -fx-background-color: #1e293b;
+}
+.sidebar-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #94a3b8;
+    -fx-font-size: 13px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10 16;
+    -fx-cursor: hand;
+    -fx-background-radius: 8;
+}
+.sidebar-btn:hover {
+    -fx-background-color: #334155;
+    -fx-text-fill: #f1f5f9;
+}
+.sidebar-btn-active {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+}
+.sidebar-section {
+    -fx-text-fill: #475569;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-padding: 12 16 4 16;
+}
+
+/* ─── Header ─────────────────────────────────────────────────── */
+.header {
+    -fx-background-color: #1e3a5f;
+}
+
+/* ─── Cartes KPI ─────────────────────────────────────────────── */
+.kpi-card {
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.08), 8, 0, 0, 2);
+    -fx-padding: 16;
+}
+.kpi-titre {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+.kpi-valeur {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+.kpi-sous {
+    -fx-font-size: 10px;
+    -fx-text-fill: #64748b;
+}
+
+/* ─── Cards génériques ───────────────────────────────────────── */
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.07), 8, 0, 0, 2);
+    -fx-padding: 16;
+}
+.card-titre {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e293b;
+}
+
+/* ─── TableView ─────────────────────────────────────────────── */
+.table-view {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-color: transparent;
+}
+.table-view .column-header-background {
+    -fx-background-color: #f8fafc;
+    -fx-background-radius: 8 8 0 0;
+}
+.table-view .column-header .label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #475569;
+    -fx-font-size: 11px;
+    -fx-padding: 0 8;
+}
+.table-row-cell {
+    -fx-cell-size: 38px;
+    -fx-border-color: transparent transparent #f1f5f9 transparent;
+}
+.table-row-cell:odd  { -fx-background-color: #fafafa; }
+.table-row-cell:even { -fx-background-color: white; }
+.table-row-cell:selected {
+    -fx-background-color: #eff6ff;
+    -fx-text-fill: #1e40af;
+}
+.table-row-cell:hover { -fx-background-color: #f0f9ff; }
+
+/* ─── Boutons action ─────────────────────────────────────────── */
+.btn-primary {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16;
+}
+.btn-primary:hover { -fx-background-color: #1d4ed8; }
+
+.btn-success {
+    -fx-background-color: #16a34a;
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+    -fx-padding: 5 10;
+    -fx-font-size: 11px;
+}
+.btn-danger {
+    -fx-background-color: #dc2626;
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+    -fx-padding: 5 10;
+    -fx-font-size: 11px;
+}
+.btn-info {
+    -fx-background-color: #0284c7;
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+    -fx-padding: 5 10;
+    -fx-font-size: 11px;
+}
+.btn-warning {
+    -fx-background-color: #d97706;
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+    -fx-padding: 5 10;
+    -fx-font-size: 11px;
+}
+.btn-secondary {
+    -fx-background-color: #475569;
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+    -fx-padding: 5 10;
+    -fx-font-size: 11px;
+}
+
+/* ─── Badges statut ──────────────────────────────────────────── */
+.badge-vert    { -fx-background-color:#dcfce7; -fx-text-fill:#16a34a; -fx-background-radius:12; -fx-padding:2 8; -fx-font-size:11px; -fx-font-weight:bold; }
+.badge-bleu    { -fx-background-color:#dbeafe; -fx-text-fill:#1d4ed8; -fx-background-radius:12; -fx-padding:2 8; -fx-font-size:11px; -fx-font-weight:bold; }
+.badge-orange  { -fx-background-color:#ffedd5; -fx-text-fill:#c2410c; -fx-background-radius:12; -fx-padding:2 8; -fx-font-size:11px; -fx-font-weight:bold; }
+.badge-rouge   { -fx-background-color:#fee2e2; -fx-text-fill:#dc2626; -fx-background-radius:12; -fx-padding:2 8; -fx-font-size:11px; -fx-font-weight:bold; }
+.badge-violet  { -fx-background-color:#f3e8ff; -fx-text-fill:#7c3aed; -fx-background-radius:12; -fx-padding:2 8; -fx-font-size:11px; -fx-font-weight:bold; }
+.badge-gris    { -fx-background-color:#f1f5f9; -fx-text-fill:#475569; -fx-background-radius:12; -fx-padding:2 8; -fx-font-size:11px; -fx-font-weight:bold; }
+
+/* ─── TextField / ComboBox ───────────────────────────────────── */
+.text-field, .password-field {
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #cbd5e1;
+    -fx-border-width: 1;
+    -fx-padding: 7 10;
+    -fx-background-color: white;
+}
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #2563eb;
+    -fx-border-width: 2;
+}
+.combo-box {
+    -fx-background-radius: 8;
+    -fx-border-color: #cbd5e1;
+    -fx-border-radius: 8;
+    -fx-background-color: white;
+}
+
+/* ─── Scroll Pane ─────────────────────────────────────────────── */
+.scroll-pane, .scroll-pane > .viewport {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+/* ─── Séparateurs ─────────────────────────────────────────────── */
+.separator .line { -fx-border-color: #e2e8f0; }
+
+/* ─── Dialog ──────────────────────────────────────────────────── */
+.dialog-pane {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+}
+.dialog-pane .header-panel {
+    -fx-background-color: #f8fafc;
+    -fx-background-radius: 12 12 0 0;
+}
+.dialog-pane .button-bar .button {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-padding: 8 20;
+}

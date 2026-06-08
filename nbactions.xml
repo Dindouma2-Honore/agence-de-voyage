@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+    <action>
+        <actionName>run</actionName>
+        <packagings>
+            <packaging>jar</packaging>
+        </packagings>
+        <goals>
+            <goal>javafx:run</goal>
+        </goals>
+        <properties>
+            <exec.mainClass>com.transport.MainApp</exec.mainClass>
+        </properties>
+    </action>
+    <action>
+        <actionName>debug</actionName>
+        <packagings>
+            <packaging>jar</packaging>
+        </packagings>
+        <goals>
+            <goal>javafx:run</goal>
+        </goals>
+        <properties>
+            <exec.mainClass>com.transport.MainApp</exec.mainClass>
+            <javafx.debug>true</javafx.debug>
+        </properties>
+    </action>
+    <action>
+        <actionName>compile</actionName>
+        <goals>
+            <goal>compile</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>test</actionName>
+        <goals>
+            <goal>test</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>rebuild</actionName>
+        <goals>
+            <goal>clean</goal>
+            <goal>compile</goal>
+        </goals>
+    </action>
+</actions>
